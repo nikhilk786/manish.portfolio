@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FolderGit2, ShieldCheck, MapPin, Search, ArrowUpRight, TrendingUp, Layers } from "lucide-react";
+import { FolderGit2, ShieldCheck, MapPin, Search, TrendingUp, Layers, ShoppingBag, Building2, Globe } from "lucide-react";
 
 interface ProjectItem {
   id: string;
@@ -16,6 +16,39 @@ interface ProjectItem {
 }
 
 const projects: ProjectItem[] = [
+  {
+    id: "morzze",
+    title: "Morzze",
+    subtitle: "Luxury Kitchen & Bathware SEO Campaign",
+    category: "E-Commerce SEO",
+    description: "Executed comprehensive On-page, product category structure, and technical SEO for Morzze luxury architectural kitchen and bathware fittings to expand organic discovery and search visibility.",
+    tags: ["Morzze", "E-Commerce SEO", "On-Page SEO", "Technical Audits"],
+    metrics: ["Substantial Keyword Visibility Surge", "High Category Page Rankings", "Organic Search Lift"],
+    icon: ShoppingBag,
+    gradient: "from-emerald-500/20 via-teal-500/10 to-transparent",
+  },
+  {
+    id: "shreshtha",
+    title: "Shreshtha",
+    subtitle: "Brand Search & Digital Presence Optimization",
+    category: "Brand & Corporate SEO",
+    description: "Formulated and executed targeted SEO strategies, keyword mapping, content structure optimization, and authority link-building to scale organic brand search presence.",
+    tags: ["Shreshtha", "Brand SEO", "Content Optimization", "Keyword Strategy"],
+    metrics: ["First-Page Ranking Growth", "Organic Traffic Increase", "Qualified Search Impressions"],
+    icon: Building2,
+    gradient: "from-teal-500/20 via-cyan-500/10 to-transparent",
+  },
+  {
+    id: "goyalsalt",
+    title: "Goyal Salt",
+    subtitle: "Enterprise Brand & Industry Search Optimization",
+    category: "Enterprise SEO",
+    description: "Managed end-to-end SEO optimization for Goyal Salt Ltd., optimizing corporate web assets, industrial search terms, and directory profiles to reinforce market authority.",
+    tags: ["Goyal Salt", "Enterprise SEO", "Industry Keywords", "SERP Dominance"],
+    metrics: ["Dominant Brand SERP Presence", "Higher Industry Keyword Ranks", "Consistent Organic Growth"],
+    icon: Globe,
+    gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
+  },
   {
     id: "hdfc-ergo",
     title: "HDFC ERGO SEO Campaign",
@@ -70,7 +103,7 @@ export default function Projects() {
         </div>
 
         {/* Projects Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((proj) => {
             const IconComponent = proj.icon;
             return (

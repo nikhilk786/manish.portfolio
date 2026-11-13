@@ -18,7 +18,7 @@ const experiences: RoleExperience[] = [
     title: "Digital Marketing SEO Executive",
     company: "U-buy Technologies",
     location: "Jaipur, Rajasthan",
-    period: "January 2025 – June 2026 (1 Year 6 Months)",
+    period: "January 2026 – Present",
     badge: "Current Role",
     type: "Full-Time Executive",
     responsibilities: [
@@ -30,6 +30,22 @@ const experiences: RoleExperience[] = [
       "Coordinate seamlessly with cross-functional content and design teams for campaign execution.",
       "Prepare transparent SEO performance reports and data-driven recommendations.",
       "Handle client communication and project workflow coordination."
+    ]
+  },
+  {
+    title: "SEO Executive",
+    company: "AV Technosys",
+    location: "Jaipur, Rajasthan",
+    period: "October 2025 – December 2025",
+    badge: "Client Projects",
+    type: "Full-Time Executive",
+    responsibilities: [
+      "Spearheaded SEO strategy and execution for key client accounts including Morzze, Shreshtha, and Goyal Salt.",
+      "Executed targeted On-page optimization, content structure enhancements, and technical SEO fixes.",
+      "Conducted extensive keyword discovery and competitor analysis to capture high-intent search traffic.",
+      "Monitored site health, indexing, and organic rankings using Google Search Console, GA4, and SEMrush.",
+      "Coordinated with development and content teams to implement metadata, schema, and page speed enhancements.",
+      "Prepared data-driven client performance reports, backlink audits, and ongoing growth recommendations."
     ]
   },
   {
