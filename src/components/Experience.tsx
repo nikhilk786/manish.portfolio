@@ -16,11 +16,28 @@ interface RoleExperience {
 
 const experiences: RoleExperience[] = [
   {
+    title: "SEO Executive",
+    company: "AV Technosys",
+    location: "Jaipur, Rajasthan",
+    period: "July 2026 – October 2026",
+    badge: "Recent Role",
+    type: "Full-Time Executive",
+    projects: ["Morzze", "Shreshtha", "Goyal Salt"],
+    responsibilities: [
+      "Led end-to-end SEO strategy and execution for Morzze, Shreshtha, and Goyal Salt accounts.",
+      "Optimized e-commerce architecture and product discovery for Morzze luxury bathware.",
+      "Enhanced brand search presence, keyword rankings, and corporate indexation for Shreshtha.",
+      "Drove enterprise SEO, SERP dominance, and keyword rank growth for Goyal Salt Ltd.",
+      "Conducted competitor gap analysis, technical site health audits, and intent mapping.",
+      "Delivered transparent client reporting dashboards and ongoing organic growth roadmaps."
+    ]
+  },
+  {
     title: "Digital Marketing SEO Executive",
     company: "U-buy Technologies",
     location: "Jaipur, Rajasthan",
-    period: "January 2026 – Present",
-    badge: "Current Role",
+    period: "January 2026 – June 2026",
+    badge: "Executive Role",
     type: "Full-Time Executive",
     responsibilities: [
       "Execute comprehensive On-page and Off-page SEO strategies for diverse digital assets.",
@@ -31,23 +48,6 @@ const experiences: RoleExperience[] = [
       "Coordinate seamlessly with cross-functional content and design teams for campaign execution.",
       "Prepare transparent SEO performance reports and data-driven recommendations.",
       "Handle client communication and project workflow coordination."
-    ]
-  },
-  {
-    title: "SEO Executive",
-    company: "AV Technosys",
-    location: "Jaipur, Rajasthan",
-    period: "October 2025 – December 2025",
-    badge: "Client Experience",
-    type: "Full-Time Executive",
-    projects: ["Morzze", "Shreshtha", "Goyal Salt"],
-    responsibilities: [
-      "Led end-to-end SEO strategy and execution for Morzze, Shreshtha, and Goyal Salt accounts.",
-      "Optimized e-commerce architecture and product discovery for Morzze luxury bathware.",
-      "Enhanced brand search presence, keyword rankings, and corporate indexation for Shreshtha.",
-      "Drove enterprise SEO, SERP dominance, and keyword rank growth for Goyal Salt Ltd.",
-      "Conducted competitor gap analysis, technical site health audits, and intent mapping.",
-      "Delivered transparent client reporting dashboards and ongoing organic growth roadmaps."
     ]
   },
   {
