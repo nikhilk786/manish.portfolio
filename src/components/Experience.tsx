@@ -10,6 +10,7 @@ interface RoleExperience {
   period: string;
   badge: string;
   type: string;
+  projects?: string[];
   responsibilities: string[];
 }
 
@@ -37,15 +38,16 @@ const experiences: RoleExperience[] = [
     company: "AV Technosys",
     location: "Jaipur, Rajasthan",
     period: "October 2025 – December 2025",
-    badge: "Client Projects",
+    badge: "Client Experience",
     type: "Full-Time Executive",
+    projects: ["Morzze", "Shreshtha", "Goyal Salt"],
     responsibilities: [
-      "Spearheaded SEO strategy and execution for key client accounts including Morzze, Shreshtha, and Goyal Salt.",
-      "Executed targeted On-page optimization, content structure enhancements, and technical SEO fixes.",
-      "Conducted extensive keyword discovery and competitor analysis to capture high-intent search traffic.",
-      "Monitored site health, indexing, and organic rankings using Google Search Console, GA4, and SEMrush.",
-      "Coordinated with development and content teams to implement metadata, schema, and page speed enhancements.",
-      "Prepared data-driven client performance reports, backlink audits, and ongoing growth recommendations."
+      "Led end-to-end SEO strategy and execution for Morzze, Shreshtha, and Goyal Salt accounts.",
+      "Optimized e-commerce architecture and product discovery for Morzze luxury bathware.",
+      "Enhanced brand search presence, keyword rankings, and corporate indexation for Shreshtha.",
+      "Drove enterprise SEO, SERP dominance, and keyword rank growth for Goyal Salt Ltd.",
+      "Conducted competitor gap analysis, technical site health audits, and intent mapping.",
+      "Delivered transparent client reporting dashboards and ongoing organic growth roadmaps."
     ]
   },
   {
@@ -126,6 +128,28 @@ export default function Experience() {
                       </span>
                     </div>
                   </div>
+
+                  {/* Prominent Projects Badge Bar */}
+                  {exp.projects && exp.projects.length > 0 && (
+                    <div className="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 flex flex-wrap items-center justify-between gap-3">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                        <span className="text-xs font-bold text-white uppercase tracking-wider">
+                          Key Projects Handled:
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        {exp.projects.map((proj, pIdx) => (
+                          <span
+                            key={pIdx}
+                            className="px-3 py-1 rounded-full bg-slate-900 border border-emerald-500/40 text-emerald-300 text-xs font-bold shadow-sm"
+                          >
+                            {proj}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   {/* Bullet Responsibilities */}
                   <div className="space-y-3">
